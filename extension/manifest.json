@@ -1,0 +1,11 @@
+{
+  "manifest_version": 3,
+  "name": "PDF Question Splitter",
+  "version": "1.1",
+  "description": "Detect printable pages by removing Question X continued pages.",
+  "permissions": ["activeTab", "tabs", "scripting"],
+  "host_permissions": ["<all_urls>"],
+  "action": {
+    "default_popup": "popup.html"
+  }
+}
