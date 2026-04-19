@@ -1,13 +1,58 @@
 # past-paper-page-filter
 
-Tool that removes **"Question X continued"** answer-space pages from past paper PDFs and outputs a custom print page range.
-
+Print past papers faster by automatically skipping pages labelled "Question X continued".
 Now available as:
 
 * **v1:** Python CLI script
 * **v2:** Browser extension for Chrome / Edge (recommended)
 
 Built for one purpose: print past papers faster.
+
+---
+## Demo
+![alt text](image-2.png)
+
+![alt text](image-3.png)
+
+![alt text](image-4.png)
+
+Open PDF → Scan → Copy Range → Print faster
+
+Original: 44 pages  
+Filtered: 18 pages  
+Saved: paper, ink, time
+
+---
+
+## Install (Chrome / Edge)
+
+1. Download ZIP
+2. Extract
+3. Open chrome://extensions or edge://extensions
+4. Enable Developer Mode
+5. Load unpacked
+6. Select /extension folder
+
+--- 
+
+## Versions and Usage
+
+### v2 Browser Extension (Recommended)
+
+Use directly inside Chrome / Edge while viewing a PDF.
+
+1. Open past paper PDF in browser
+2. Click extension icon
+3. Scan Current PDF
+4. Copy Range
+5. Press Ctrl+P and paste pages
+
+### v1 Python CLI
+
+```bash
+pip install pymupdf
+python split_questions.py "June 2023 QP.pdf"
+```
 
 ---
 
@@ -31,27 +76,6 @@ This project:
 ```
 
 Paste directly into your printer's custom page range box.
-
----
-
-## Versions
-
-### v2 Browser Extension (Recommended)
-
-Use directly inside Chrome / Edge while viewing a PDF.
-
-1. Open past paper PDF in browser
-2. Click extension icon
-3. Scan Current PDF
-4. Copy Range
-5. Press Ctrl+P and paste pages
-
-### v1 Python CLI
-
-```bash
-pip install pymupdf
-python split_questions.py "June 2023 QP.pdf"
-```
 
 ---
 
@@ -84,10 +108,12 @@ Common in UK exam board papers such as:
 * Edexcel
 * OCR
 * AQA
-  n- CIE (some formats)
+* CIE (some formats)
 
 ---
 
 ## License
 
 MIT
+
+
