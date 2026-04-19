@@ -116,4 +116,6 @@ Common in UK exam board papers such as:
 
 MIT
 
+Processes PDFs locally in your browser. No data collected.
+
 
