@@ -1,6 +1,11 @@
 # past-paper-page-filter
 
-Tiny Python utility that removes **"Question X continued"** answer-space pages from past paper PDFs and outputs a custom print page range.
+Tool that removes **"Question X continued"** answer-space pages from past paper PDFs and outputs a custom print page range.
+
+Now available as:
+
+* **v1:** Python CLI script
+* **v2:** Browser extension for Chrome / Edge (recommended)
 
 Built for one purpose: print past papers faster.
 
@@ -14,7 +19,7 @@ Question 3 continued
 
 These pages are often mostly blank writing space. Useful in an exam, useless when revising with a slow printer.
 
-This script:
+This project:
 
 * Scans every page in a PDF
 * Detects pages containing `Question X continued`
@@ -29,43 +34,31 @@ Paste directly into your printer's custom page range box.
 
 ---
 
-## Example
+## Versions
 
-### Input PDF
+### v2 Browser Extension (Recommended)
 
-44-page past paper with many continuation pages.
+Use directly inside Chrome / Edge while viewing a PDF.
 
-### Output
+1. Open past paper PDF in browser
+2. Click extension icon
+3. Scan Current PDF
+4. Copy Range
+5. Press Ctrl+P and paste pages
 
-```text
-1,2,4,6,8,10,12,14,16,18...
-```
-
----
-
-## Installation
-
-Install dependency:
+### v1 Python CLI
 
 ```bash
 pip install pymupdf
-```
-
----
-
-## Usage
-
-```bash
 python split_questions.py "June 2023 QP.pdf"
 ```
 
 ---
 
-## Example Terminal Output
+## Example Output
 
-```bash
-$ python split_questions.py "June 2023 QP.pdf"
-1,2,4,6,8,10,12,14,16
+```text
+1,2,4,6,8,10,12,14,16,18...
 ```
 
 ---
@@ -75,13 +68,6 @@ $ python split_questions.py "June 2023 QP.pdf"
 Because some printers are painfully slow.
 
 If each wasted page costs 5–10 seconds, removing 20+ junk pages saves real time.
-
----
-
-## Requirements
-
-* Python 3
-* PyMuPDF
 
 ---
 
@@ -98,16 +84,7 @@ Common in UK exam board papers such as:
 * Edexcel
 * OCR
 * AQA
-* CIE (some formats)
-
----
-
-## Future Ideas
-
-* Auto-generate reduced PDF instead of page list
-* Detect formula/data booklets
-* GUI drag-and-drop version
-* Batch process folders
+  n- CIE (some formats)
 
 ---
 
